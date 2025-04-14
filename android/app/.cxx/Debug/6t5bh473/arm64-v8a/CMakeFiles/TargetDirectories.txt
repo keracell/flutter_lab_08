@@ -1,0 +1,2 @@
+/home/agil/Projects/d/Development/tmp/flutter/lab_08_meals/android/app/.cxx/Debug/6t5bh473/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/agil/Projects/d/Development/tmp/flutter/lab_08_meals/android/app/.cxx/Debug/6t5bh473/arm64-v8a/CMakeFiles/rebuild_cache.dir
