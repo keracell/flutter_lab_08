@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lab_08_dubl3/data/dummy_data.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 // import 'package:google_fonts/google_fonts.dart';
-import 'package:lab_08_dubl3/screens/categories_screen.dart';
-import 'package:lab_08_dubl3/screens/meals_screen.dart';
+import 'package:lab_08_dubl3/screens/tabs_screen.dart';
 
 // final textTheme = GoogleFonts.robotoTextTheme();
 // final themeLight = ThemeData.dark().copyWith(
@@ -13,23 +12,24 @@ import 'package:lab_08_dubl3/screens/meals_screen.dart';
 //   textTheme: textTheme,
 // );
 
-const _categories = availableCategories;
-
 void main() {
   runApp(
-    MaterialApp(
+    const ProviderScope(
+      child: App(),
+    ),
+  );
+}
+
+class App extends StatelessWidget {
+  const App({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
       // darkTheme: ThemeData.dark().copyWith(),
       // theme: themeLight,
       // themeMode: ThemeMode.system,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Meals App'),
-        ),
-        body: const CategoriesScreen(
-          categories: _categories,
-        ),
-        // body: const MealsScreen(meals: dummyMeals, title: 'title'),
-      ),
-    ),
-  );
+      home: TabsScreen(),
+    );
+  }
 }
