@@ -1,4 +1,4 @@
-name: lab_08_meals
+name: lab_08_dubl3
 description: "A new Flutter project."
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
@@ -13,6 +13,9 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   google_fonts: ^6.2.1
+  transparent_image: ^2.0.1
+  riverpod: ^2.6.1
+  flutter_riverpod: ^2.6.1
 
 dev_dependencies:
   flutter_test:
